@@ -1,0 +1,492 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/*  ----------------------- css header -----------------------  */
+header {
+  background-color: #333;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+.logo-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.logo img {
+  width: 250px;
+}
+
+.nav {
+  list-style: none;
+  padding: 10px;
+  display: flex;
+}
+
+.nav li {
+  margin-right: 20px;
+}
+
+.nav li img {
+  width: 30px;
+  margin-left: 5px;
+  position: relative;
+  bottom: 5px;
+}
+
+.nav li:last-child {
+  display: flex;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.search-bar input {
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  width: 400px;
+}
+
+.search-bar button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/*  ----------------------- css footer -----------------------  */
+
+
+
+
+
+
+
+.footerFooter{
+  position: relative;
+  width: 100%;
+  background: #4A494A;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+
+
+/*  ----------------------- css modal login ----------------------- */
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #425CAA;
+  width: 60%;
+}
+
+.modal h1 {
+  position: fixed;
+  top: 90px;
+  right: 30px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 2em;
+}
+
+.modal-content input {
+  width: 400px;
+  color: #425CAA;
+  padding: 5px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  box-sizing: content-box;
+}
+
+.modal-login-BTN {
+  display: flex;
+  margin: 5px;
+  padding: 5px;
+}
+
+.modal-login-BTN button {
+  background-color: #425CAA;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.modal {
+  width: 100vw;
+  margin: auto;
+  border: #000 solid 1px;
+  background-color: #425CAA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  margin-top: 80px;
+}
+
+.img-content {
+  display: flex;
+  align-items: center;
+  /* height:50%; */
+  width: 70vw;
+  ;
+  background-color: white;
+}
+
+.image-login {
+  margin: 20px;
+}
+
+.image-login img {
+  width: 350px;
+  padding: 50px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  left: 200px;
+  width: 225px;
+}
+
+.modal-login-BTN {
+  margin-top: 10px;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.modal-ERROR button{
+  background-color:#425CAA;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin: auto;
+}
+
+.modal-BTN button{
+  background-color:#425CAA;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.modal-ERROR button{
+  background-color:#425CAA;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin: auto;
+}
+
+.modal-BTN button{
+  background-color:#425CAA;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+/*  ----------------------- css modal details ----------------------- */
+.modal-detail {
+  position: fixed;
+  top: 80px;
+  /* left: 5%; */
+  width: 100%;
+  margin: auto;
+  border: #000 solid 1px;
+  background-color: #425CAA;
+  height: 90vh;
+}
+ 
+.modal-detail h1 {
+  display: inline-block;
+  position: relative;
+  background: #425CAA;
+  width: 4%;
+  color: white;
+  text-align: center;
+  margin-left: 96%;
+  font-size: 1.7em;
+  cursor: default;
+}
+ 
+.modal-detail h1:hover {
+  background-color: red;
+}
+ 
+.detail {
+  position: relative;
+  top: 12%;
+  margin: auto;
+  width: 80%;
+  height: 400px;
+  background-image: linear-gradient(to right, rgba(63, 56, 56, 0), rgb(33, 31, 31));
+  background-repeat: repeat;
+  background-size: cover;
+  /* font-size: 0; */
+}
+ 
+.container-img-detail {
+  position: absolute;
+  display: inline-block;
+  width: 30%;
+  height: 100%;
+}
+ 
+.img-detail {
+  position: relative;
+  left: 50px;
+  top: -50px;
+  width: 260px;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: 260px 500px;
+}
+ 
+.container-details {
+  position: absolute;
+  display: inline-block;
+  width: 70%;
+  height: 100%;
+  right: 0px;
+  color: white;
+  text-align: center;
+  margin: auto;
+}
+ 
+.container-details h2, .container-details ul, .container-details p {
+  margin: 20px 0 20px 0;
+}
+ 
+.container-details ul li:last-child {
+  display: none;
+}
+ 
+.container-details ul li {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  margin: 0 20px 0 20px;
+  background-color: #333;
+}
+ 
+.container-details p:first-of-type {
+  position: relative;
+  margin: auto;
+  width: 60%;
+}
+ 
+.modal-BTN button {
+  background-color: blue;
+  margin: 15px 20px 15px 20px;
+  width: 100px;
+  height: 30px;
+  border-radius: 15px;
+}
+
+
+/*    Css page liste de films      */
+.listefilms img{
+  height: 100px;
+  margin-left: 50px;
+}
+
+.listefilms, .listefilmdiv {
+  background-color: black;
+  color: white;
+  font-size: 22px;
+}
+
+.listefilms li {
+  margin: 20px;
+  border: 3px #007 solid;
+  border-radius: 20px;
+  width: calc(100% - 46px);
+  text-align: center;
+  padding: 10px;
+  background-color: #425CAA;
+  display: flex;
+}
+
+.listefilms div {
+  display: inline-block;
+}
+
+.listefilmdiv select {
+  background-color: #425CAA;
+  border: 2px #007 solid;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 10px;
+  width: 15%;
+  text-align: center;
+  font-size: 16px;
+}
+
+.listefilms li div {
+  width: 400px;
+}
+
+.listefilms li div+div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bouttonfiltre {
+  margin: 10px;
+  padding: 5px;
+  border: 2px #007 solid;
+  border-radius: 30px;
+  width: 12%;
+  background-color: #425CAA;
+  font-size: 16px;
+}
+
+.bouttonfiltre:last-of-type {
+  border-radius: 20px;
+}
+
+.bouttonfiltre:hover, .listefilms li:hover {
+  transition: 0.5s;
+  background-color: white;
+  color: #425CAA;
+}
+
+.listefilmdiv select:hover {
+  background-color: white;
+  color: #425CAA;
+}
+
+.listefilms {
+  overflow-y: scroll;
+  height: 400px;
+}
+
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+
+/*  ----------------------- css Accueil ----------------------- */
+
